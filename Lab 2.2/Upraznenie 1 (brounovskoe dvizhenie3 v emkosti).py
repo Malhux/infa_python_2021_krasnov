@@ -1,0 +1,22 @@
+import turtle as t
+from random import *
+t.shape('turtle')
+t.width(5)
+t.speed(0)
+t.color('blue')
+t.penup()
+t.goto(-350,-300)
+t.pendown()
+t.goto(-350,300)
+t.goto(350,300)
+t.goto(350,-300)
+t.goto(-350,-300)
+t.penup()
+t.goto(0,0)
+t.color('red')
+t.shape('circle')
+t.speed(4)
+t.width(2)
+t.pendown()
+for i in range(150):
+    t.goto(randint(-350,350), randint(-300,300))
